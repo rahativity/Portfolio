@@ -1,0 +1,2 @@
+import{t as e}from"./rolldown-runtime.Dh6celcD.mjs";import{c as t,g as n,o as r,w as i}from"./react.CWOg5Z1e.mjs";function a(e){return n((n,r)=>t(e,{ref:r,...n,id:`projects-list`}))}var o=e((()=>{r(),i()}));export{a as n,o as t};
+//# sourceMappingURL=CMSSort.Y15z2fLm.mjs.map
