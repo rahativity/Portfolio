@@ -1,36 +1,32 @@
-# independent-screenshot-660028.framer.app
+# Portfolio — Md. Sabbir Hossain Rahat
 
-An exact copy of the published site, in a Next.js project.
+Personal portfolio website for Md. Sabbir Hossain Rahat (CSE Student & Software Developer), built on Next.js with high-fidelity Framer exports.
 
 ```bash
 npm install
 npm run dev
 ```
 
-## What this is
+## How It Works
 
-Every page is a file under `public/`, copied from the published site and served
-byte for byte by a rewrite in `next.config.mjs`. It renders exactly as Framer
-published it, including the parts a rebuild cannot reach - a WebGL canvas, a
-component driven frame by frame - because nothing here was interpreted.
+Every page is served via static HTML under `public/`, wired through Next.js rewrites in `next.config.mjs`. This preserves 100% of Framer animations, WebGL canvases, and micro-interactions byte-for-byte.
 
-3 routes:
+### Active Routes
 
-- `/`
-- `/about`
-- `/projects`
+- `/` — Home (Hero, Featured Works, Experience)
+- `/about` — About (Background, Skills, Philosophy)
+- `/projects` — Projects (Detailed showcase)
+- `/article` — Articles & Journal
+- `/contact` — Contact & Inquiries
 
-## What this is not
+## Development & Build
 
-Source you can edit. The markup is Framer's, minified, alongside its runtime -
-you can host it, put your domain on it and add pages of your own around it, but
-changing the design means changing it in Framer and exporting again.
+- **Development server**: `npm run dev`
+- **Production build**: `npm run build`
+- **Production start**: `npm run start`
 
-For source you can edit, export the React / Next.js tier instead: it rebuilds
-the same pages as components with their own stylesheet. It is readable, and it
-is not pixel-identical.
+## Assets & Structure
 
-## Adding your own pages
-
-Anything you add under `app/` works normally, as long as its route is not one
-of the rewrites above - those are answered by the copy before Next sees them.
+- `public/assets/` — Self-hosted static assets (fonts, optimized images, Framer runtime modules).
+- `public/f2c-sw.js` — Service worker mapping external Framer CDN requests to local self-hosted assets for offline reliability and fast caching.
+- `scripts/` — Project personalization and maintenance utility scripts.

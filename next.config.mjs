@@ -1,5 +1,11 @@
+import path from "node:path"
+import { fileURLToPath } from "node:url"
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
 /** @type {import("next").NextConfig} */
 const nextConfig = {
+  outputFileTracingRoot: path.resolve(__dirname),
   // The pages are files, not routes. beforeFiles runs ahead of Next's own
   // routing, so a request for /about is answered by the copy of /about
   // rather than by the placeholder page.
