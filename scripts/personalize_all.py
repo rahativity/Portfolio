@@ -149,7 +149,6 @@ def personalize_home():
         ('`Open for new projects`', '`Open to collaboration`'),
         ('`Working worldwide`', '`Based in Bangladesh`'),
         ('`Response within 24h`', '`Building & learning`'),
-        ('hello@calenne.design', 'https://github.com/rahativity'),
 
         # Works intro
         ('Design built around lasting clarity', 'Projects built with purpose.'),
