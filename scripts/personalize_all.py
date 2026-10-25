@@ -105,6 +105,7 @@ def personalize_script_main():
         ('mailto:hello@calenne.studio', 'https://www.instagram.com/promithiuss?igsh=NzJwdXo1ZjBnOWk2'),
         ('Tel:+1 (415) 555-0198', 'https://www.facebook.com/share/1G99UNYx9w/'),
         ('https://www.google.com/maps', 'https://www.tumblr.com/rahathinks?source=share'),
+        ('https://www.linkedin.com/in/dmytri-design/', 'https://www.linkedin.com/in/md-sabbir-hossain-rahat-017a6b364/'),
         ('children:`X link`', 'children:`GitHub`'),
         ('children:`Linkedin`', 'children:`LinkedIn`'),
         ('children:`Dribbble`', 'children:`Codeforces`'),
@@ -430,6 +431,10 @@ def personalize_about():
         ('Copenhagen, Denmark', 'Bangladesh'),
         ('Calenne Studio', 'Khawaja Yunus Ali University'),
         ('title:`Calenne`', 'title:`Rahat`'),
+        ('`COPENHAGEN`', '`BANGLADESH`'),
+        ('`Years of experience`', '`Year of Study`'),
+        ('`Projects completed`', '`3rd Year CSE`'),
+        ('`Countries reached`', '`KYAU`'),
     ]
     replace_in_file(MJS_ABOUT, replacements, "About Page Chunk")
 

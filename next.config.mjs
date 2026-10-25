@@ -47,6 +47,14 @@ const nextConfig = {
         {
           "source": "/contact/",
           "destination": "/contact/index.html"
+        },
+        {
+          "source": "/projects/:path*",
+          "destination": "/projects/index.html"
+        },
+        {
+          "source": "/article/:path*",
+          "destination": "/article/index.html"
         }
       ],
     }
